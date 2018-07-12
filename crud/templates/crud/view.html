@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h3>{{ data.id }}</h3>
+<h3>{{ data.emp_name }}</h3>
+<h3>{{ data.emp_email }}</h3>
+<h3>{{ data.address }}</h3>
+<h3>{{ data.phone }}</h3>
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr class="success">
+        <th>ID</th>
+        <th>EmpName</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone</th>
+
+    </tr>
+    </thead>
+    <tbody>
+
+     <tr>
+            <td>{{ data.id }}</td>
+            <td>{{ data.emp_name }}</td>
+            <td>{{ data.emp_email }}</td>
+            <td>{{ data.address }}</td>
+            <td>{{ data.phone }}</td>
+    </tr>
+
+
+    </tbody>
+</table>
+<a class="btn btn-success" href="/crud/index">Back To Index</a>
+<a class="btn btn-warning" href="/sites/signin">Back To Dashboard</a>
+{% endblock %}

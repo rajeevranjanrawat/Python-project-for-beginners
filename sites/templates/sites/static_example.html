@@ -1,0 +1,27 @@
+
+
+{% extends 'layout.html' %}
+{% include 'sidenav.html' %}
+{% block content %}
+
+{% load static %}
+<style>
+    .demo_css{
+    color:blue;
+    }
+</style>
+
+<link href="{% static 'css/new.css' %}" rel="stylesheet">
+<script src="{% static 'js/new.js' %}" type="text/javascript"></script>
+
+<h3>Working on static files</h3>
+<img src="{% static 'images/img.jpg' %}" alt="loading error..." height="300" width="300">
+
+<h1 style="color:red">Inline css</h1>
+<h2 class="demo_css">internal css</h2>
+<h3 class="ext_css">External Css</h3>
+
+<button class="btn btn-danger" onclick="clickMe()"> Click One</button>
+<button class="btn btn-warning" onclick="clickMe2()"> Click Two</button>
+
+{% endblock %}

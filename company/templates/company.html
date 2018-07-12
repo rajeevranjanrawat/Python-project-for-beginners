@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>Hello Company...</h1>
+
+
+{% if name == '' %}
+<h3>Empty</h3>
+
+{% else %}
+<h2>Name:{{ name }}</h2>
+{% endif %}
+
+{% endblock %}
